@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      width: 250px;
+      height: 550px; /* Adjusted height */
+      border-radius: 30px;
+      border: 2px solid black;
+      padding: 20px;
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+      background-color: #ffffff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="range"] {
+      width: 80%;
+      margin-top: 20px;
+    }
+
+    p {
+      margin: 20px 0;
+    }
+
+    .text {
+      font-size: 20px;
+      color: #333;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+   <!-- Fun Project Text -->
+   <p class="text">FUN PROJECT</p>
+
+   <!-- Letter Slider -->
+   <input type="range" min="0" max="4" value="0" 
+   oninput="displayText.innerText = ['S', 'A', 'D', 'I', 'A'][this.value]">
+   <p id="displayText">S</p>
+
+   <!-- Emoji Slider -->
+   <input type="range" min="0" max="4" value="0" 
+   oninput="emojiText.innerText = ['😀', '😃', '😄', '😁', '😆'][this.value]">
+   <p id="emojiText">😀</p>
+
+   <!-- T,A,B,A,S,S,U,M Slider -->
+   <input type="range" min="0" max="7" value="0" 
+   oninput="nameText.innerText = ['T', 'A', 'B', 'A', 'S', 'S', 'U', 'M'][this.value]">
+   <p id="nameText">T</p>
+</div>
+
+</body>
+</html>
